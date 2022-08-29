@@ -1,4 +1,10 @@
 $(function(){
+    $('.ham').click(function(){
+        $('.ham').toggleClass('on')
+        $('.gnb').toggleClass('on')
+    })
+
+
     $('.tab_menu > li').click(function(){
         let idx1 = $(this).index('.tab_menu > li')
         $('.tab_menu > li').removeClass('on')
